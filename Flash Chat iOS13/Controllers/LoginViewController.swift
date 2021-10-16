@@ -22,10 +22,17 @@ class LoginViewController: UIViewController {
                     print(e.localizedDescription);
                 } else {
                     // Navigate to Chat Screen on log in success.
-                    self.performSegue(withIdentifier: "LoginToChat", sender: self)
+                    self.performSegue(withIdentifier: K.loginSegue, sender: self)
                 }
             }
         }
     }
     
 }
+
+
+/*
+    DEV LOGIN INFO.
+    email: i@email.com
+    pass:  password
+ */
